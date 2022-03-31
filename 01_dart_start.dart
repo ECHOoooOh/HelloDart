@@ -8,7 +8,7 @@ void variables(){
         'url' : '//path/to/saturn.jpg'
     };
     print(
-        'name is $name\n, year is $year, antennaDiameter is $antennaDiameter, flybyObjects is $flybyObjects, image is $image'
+        'name is $name,\n year is $year,\n antennaDiameter is $antennaDiameter,\n flybyObjects is $flybyObjects,\n image is $image'
     );
 }
 
