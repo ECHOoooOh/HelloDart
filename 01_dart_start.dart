@@ -111,7 +111,7 @@ void useClass(){
     //var voyager4 = Orbiter('Voyager IV',DateTime(2022, 3, 31),1800);
     //voyager4.describe();
 
-    var voyager5 = Spacecraft('Voyager V',DateTime(2012, 5,17));
+    var voyager5 = PilotedCraft('Voyager V',DateTime(2012, 5,17));
     voyager5.describe();
     voyager5.destribeCrew();
 }
