@@ -31,10 +31,6 @@ void variables(){//变量
     }
 }
 
-void controlFlow(){
-    if ( year )
-}
-
 void main(){
     variables();
 }
