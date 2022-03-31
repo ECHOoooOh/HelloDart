@@ -69,7 +69,12 @@ class Spacecraft{
     }
     
 }
+class Orbiter extends Spacecraft{
+    double altitude;
 
+    Orbiter(String name, DateTime launchDate, this.altitude)
+        : super(name, lanuchDate);
+}
 void useClass(){
     var voyager = Spacecraft('Voyager I',DateTime(1997, 9, 5));
     voyager.describe();
@@ -77,6 +82,7 @@ void useClass(){
     var voyager3 = Spacecraft.unlaunched('Voyager III');
     voyager3.describe();
 }
+
 
 void main(){
     //variables();
