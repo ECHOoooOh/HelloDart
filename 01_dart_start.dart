@@ -1,4 +1,5 @@
-void variables(){//变量
+void variables(){
+    //变量
     var name = 'Voyager I';
     var year = 1997;
     var antennaDiameter = 3.7;
@@ -7,7 +8,7 @@ void variables(){//变量
         'tags' : ['saturn'],
         'url' : '//path/to/saturn.jpg'
     };
-    print(
+    /*print(
         'name is $name,\n year is $year,\n antennaDiameter is $antennaDiameter,\n flybyObjects is $flybyObjects,\n image is $image'
     );
 
@@ -28,7 +29,10 @@ void variables(){//变量
     while(year < 2016){
         year += 1;
         print('$year\t');
-    }
+    }*/
+
+    //（胖箭头）简写语法
+    flybyObjects.where((name) => name.contains('turn')).forEach(print);
 }
 
 int fibonacci(int n){
@@ -37,7 +41,7 @@ int fibonacci(int n){
 }
 
 void main(){
-    //variables();
+    variables();
     var result = fibonacci(20);
-    print('fibonacci(20) is $result');
+    //print('fibonacci(20) is $result');
 }
