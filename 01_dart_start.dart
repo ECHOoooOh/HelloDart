@@ -46,7 +46,7 @@ class Spacecraft{
     DateTime? launchDate;
     //dart 中默认进行空安全检查，？表示不用检查
 
-    int? get launchYear => launchdate?.year;
+    int? get launchYear => launchDate?.year;
 
     Spacecraft(this.name, this.launchDate){
         //初始化代码
