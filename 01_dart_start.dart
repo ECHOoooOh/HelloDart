@@ -33,6 +33,7 @@ void variables(){
 
     //（胖箭头）简写语法
     flybyObjects.where((name) => name.contains('turn')).forEach(print);
+    //找到flybyObjects中包含turn的所有变量并将其打印（我猜）
 }
 
 int fibonacci(int n){
