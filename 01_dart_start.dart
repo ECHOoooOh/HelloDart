@@ -90,6 +90,17 @@ class Orbiter extends Spacecraft{
         }
     }
 }
+
+mixin Piloted{
+    int astronauts = 1;
+
+    void describeCrew(){
+        print('Number of astronauts: $astronauts');
+    }
+}
+class PilotedCraft extends Spacecraft with Piloted{
+
+}
 void useClass(){
     //var voyager = Spacecraft('Voyager I',DateTime(1997, 9, 5));
     //voyager.describe();
@@ -97,9 +108,14 @@ void useClass(){
     //var voyager3 = Spacecraft.unlaunched('Voyager III');
     //voyager3.describe();
 
-    var voyager4 = Orbiter('Voyager IV',DateTime(2022, 3, 31),1800);
-    voyager4.describe();
+    //var voyager4 = Orbiter('Voyager IV',DateTime(2022, 3, 31),1800);
+    //voyager4.describe();
+
+    var voyager5 = Spacecraft('Voyager V',DateTime(2012, 5,17));
+    voyager5.describe();
+    voyager5.destribeCrew();
 }
+
 
 
 void main(){
