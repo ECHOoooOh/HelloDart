@@ -74,13 +74,30 @@ class Orbiter extends Spacecraft{
 
     Orbiter(String name, DateTime launchDate, this.altitude)
         : super(name, launchDate);
+    
+
+    void describe(){
+        print('Spacecraft:$name');
+        //？？类型提升对getters不起作用
+        var launchDate = this.launchDate;
+        if (launchDate != null){
+            int years = DateTime.now().difference(launchDate).inDays ~/ 365;
+            print ('Launched: $launchYear ($years years ago)');
+            print ('altitude: $altitude');
+        }else{
+            print('Unlaunched');
+        }
+    }
 }
 void useClass(){
-    var voyager = Spacecraft('Voyager I',DateTime(1997, 9, 5));
-    voyager.describe();
+    //var voyager = Spacecraft('Voyager I',DateTime(1997, 9, 5));
+    //voyager.describe();
 
-    var voyager3 = Spacecraft.unlaunched('Voyager III');
-    voyager3.describe();
+    //var voyager3 = Spacecraft.unlaunched('Voyager III');
+    //voyager3.describe();
+
+    var voyager4 = Orbiter('Voyager IV',DateTime(2022, 3, 31));
+    voyager4.describe();
 }
 
 
