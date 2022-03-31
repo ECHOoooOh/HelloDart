@@ -69,6 +69,7 @@ class Spacecraft{
     }
     
 }
+//扩展类（继承）
 class Orbiter extends Spacecraft{
     double altitude;
 
