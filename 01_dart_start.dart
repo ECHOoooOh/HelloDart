@@ -96,7 +96,7 @@ void useClass(){
     //var voyager3 = Spacecraft.unlaunched('Voyager III');
     //voyager3.describe();
 
-    var voyager4 = Orbiter('Voyager IV',DateTime(2022, 3, 31));
+    var voyager4 = Orbiter('Voyager IV',DateTime(2022, 3, 31),1800);
     voyager4.describe();
 }
 
