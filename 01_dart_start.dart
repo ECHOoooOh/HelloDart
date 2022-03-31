@@ -19,15 +19,15 @@ void variables(){//变量
     }
 
     for(final object in flybyObjects){
-        print(object\n);
+        print('$object\n');
     }
 
     for(int month = 1; month <= 12; month++){
-        print (month\t);
+        print ('$month\t');
     }
     while(year < 2016){
         year += 1;
-        print(year\t);
+        print('$year\t');
     }
 }
 
