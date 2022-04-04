@@ -128,6 +128,27 @@ class PilotedCraft extends Spacecraft with Piloted{
     }
     
 }
+//接口、抽象类
+abstract class Describe{
+    void describe();
+    void describeWithEmphasis(){
+        print('=======');
+        describe();
+        print('=======');
+    }
+}
+class Description implements Describe{
+    @override
+    void describe(){
+        print('Beautiful');
+    }
+    void describeWithEmphasis(){
+        print('=======');
+        describe();
+        print('=======');
+    }
+}
+
 void useClass(){
     var voyager = Spacecraft('Voyager I',DateTime(1997, 9, 5));
     voyager.describe();
@@ -141,6 +162,9 @@ void useClass(){
     var voyager5 = PilotedCraft('Voyager V',DateTime(2012, 5,17));
     voyager5.describe();
     voyager5.describeCrew();
+
+    Description variable = new Description();
+    variable.describeWithEmphasis();
 }
 //async,await异步
 const oneSecond = Duration(seconds: 1);
