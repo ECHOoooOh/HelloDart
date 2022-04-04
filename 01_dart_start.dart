@@ -121,12 +121,20 @@ void useClass(){
     voyager5.describe();
     voyager5.describeCrew();
 }
-
+//async,await异步
+const oneSecond = Duration(seconds: 1);
+Future<void> printWithDelay(String message) async {
+  await Future.delayed(oneSecond);
+  print(message);
+}
 
 
 void main(){
     //variables();
     var result = fibonacci(20);
     //print('fibonacci(20) is $result');
+    String message='message';
+    printWithDelay(message);
     useClass();
+
 }
