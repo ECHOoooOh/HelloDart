@@ -101,6 +101,10 @@ mixin Piloted{
 class PilotedCraft extends Spacecraft with Piloted{
     PilotedCraft(String name, DateTime launchDate)
         :super(name,launchDate);
+    @override
+    void describeCrew(){
+        super.describeCrew();
+    }
     
 }
 void useClass(){
