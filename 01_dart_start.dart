@@ -147,7 +147,7 @@ Future<void> printWithDelay(String message) async {
 
 
 void main(){
-    //variables();
+    variables();
     var result = fibonacci(20);
     //print('fibonacci(20) is $result');
     String message='message';
