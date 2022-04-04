@@ -99,7 +99,7 @@ mixin Piloted{
     }
 }
 class PilotedCraft extends Spacecraft with Piloted{
-    PilotedCraft(String name, Datetime launchDate)
+    PilotedCraft(String name, DateTime launchDate)
         :super(name,launchDate);
     
 }
