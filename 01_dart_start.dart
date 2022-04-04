@@ -99,9 +99,9 @@ mixin Piloted{
     }
 }
 class PilotedCraft extends Spacecraft with Piloted{
-    PilotedCraft(String name, Datetime launchDate){
+    PilotedCraft(String name, Datetime launchDate)
         :super(name,launchDate);
-    }
+    
 }
 void useClass(){
     //var voyager = Spacecraft('Voyager I',DateTime(1997, 9, 5));
