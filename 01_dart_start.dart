@@ -33,7 +33,22 @@ void variables(){
 
     //（胖箭头）简写语法
     flybyObjects.where((name) => name.contains('turn')).forEach(print);
-    //找到flybyObjects中包含turn的所有变量并将其打印（我猜）
+    //找到flybyObjects中包含turn的所有变量并将其打印
+
+    int astronauts = 1;
+    if (astronauts == 0) {
+        throw StateError('No astronauts.');
+    }
+    try {
+        for (final object in flybyObjects) {
+        var description = await File('$object.txt').readAsString();
+        print(description);
+        }
+    } on IOException catch (e) {
+        print('Could not describe object: $e');
+    } finally {
+        flybyObjects.clear();
+    }
 }
 
 int fibonacci(int n){//斐波那契数列
