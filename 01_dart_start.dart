@@ -119,7 +119,7 @@ void useClass(){
 
     var voyager5 = PilotedCraft('Voyager V',DateTime(2012, 5,17));
     voyager5.describe();
-    voyager5.destribeCrew();
+    voyager5.describeCrew();
 }
 
 
