@@ -1,4 +1,6 @@
-void variables(){
+import 'dart:async';
+import 'dart:io';
+void variables()async{
     //变量
     var name = 'Voyager I';
     var year = 1997;
