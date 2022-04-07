@@ -179,7 +179,7 @@ void main(){
     var result = fibonacci(20);
     print('fibonacci(20) is $result');
     String message='message';
-    printWithDelay(message);
+    printWithDelay(message);//遇见await 语句先运行主函数下面语句，再运行await
     useClass();
 
 }
