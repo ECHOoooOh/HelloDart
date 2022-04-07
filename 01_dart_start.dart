@@ -23,7 +23,7 @@ void variables()async{
         print ('20th century');
     }
 
-    for(final object in flybyObjects){
+    for(final object in flybyObjects){//final循环中不可改变
         print('$object');
     }
 
